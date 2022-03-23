@@ -1,0 +1,182 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+.content_grid_template{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.content_grid_template .description_of_softexpert_bpm{
+    background-color: #d9edff;
+}
+.content_grid_template #demo_softexpert_img img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-top: 60px;
+}
+.content_grid_template #solution_title h1{
+    text-align: center;
+    color: #02559e;
+}
+.content_grid_template #solution_description{
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+.content_grid_template #solution_description p{
+    color: #02559e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify
+}
+.content_grid_template #btn_solution_style button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    background-color: #dd3333;
+    height: 42px;
+    min-width: 30%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 3px;
+}
+.content_grid_template #btn_solution_style button:hover{
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%);
+    cursor: pointer;
+}
+.content_grid_template #btn_solution_style{
+    margin-bottom: 5000px;
+}
+
+
+/*** Código Responsivo para diferentes telas ***/ 
+
+@media screen and (max-width: 1440px) {
+    .content_grid_template #solution_description{
+        display: block;
+        margin: auto;
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .content_grid_template #solution_description p{
+        color: #02559e;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: justify
+    }
+}
+@media screen and (max-width: 1280px) {
+    .content_grid_template #solution_description p{
+        color: #02559e;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: justify
+    }
+}
+@media screen and (max-width: 1280px) {
+    .content_grid_template #solution_description p{
+        color: #02559e;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: justify
+    }
+    .content_grid_template #btn_solution_style button{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+        background-color: #dd3333;
+        height: 36px;
+        max-width: 60%;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        border-style: none;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .content_grid_template #solution_description p{
+        color: #02559e;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: justify
+    }
+    .content_grid_template #btn_solution_style button{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+        background-color: #dd3333;
+        height: 36px;
+        max-width: 60%;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        border-style: none;
+        border-radius: 3px;
+    }
+}
+
+
+@media screen and (max-width: 80em) {
+
+
+.content_grid_template{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.content_grid_template #demo_softexpert_img img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 60px;
+}
+.content_grid_template #btn_solution_style{
+    margin-bottom: 40px;
+}
+.content_grid_template #solution_title h1{
+    text-align: center;
+    color: #02559e;
+}
+.content_grid_template #solution_description{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+.content_grid_template #solution_description p{
+    color: #02559e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify
+}
+.content_grid_template #btn_solution_style button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    background-color: #dd3333;
+    height: 50px;
+    width: 30%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 3px;
+}
+
+}
+
