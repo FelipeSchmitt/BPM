@@ -2,10 +2,12 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Roboto';
+    overflow: hidden;
 }
 .content_grid_template{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    height: 100vh;
 }
 
 /*** Description section of BPM ***/
@@ -49,6 +51,14 @@ body{
     border-style: none;
     border-radius: 3px;
 }
+.content_grid_template #btn_solution_style #text{
+    display:inline;
+    height: 200px;
+}
+.content_grid_template #btn_solution_style button:before{
+    content: url(images/monitor-solucao.svg);
+    line-height: 58px;
+}
 .content_grid_template #btn_solution_style button:hover{
     box-shadow: 0 2px 3px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%);
     cursor: pointer;
@@ -69,7 +79,8 @@ body{
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    width: 250px;
+    max-width: 350px;
+    min-width: 200px;
 }
 .content_grid_template .slides_of_softexpert_bpm #slidebox img{
     width: 100%;
@@ -137,6 +148,11 @@ body{
         line-height: 1.5;
         text-align: justify
     }
+    
+.content_grid_template .slides_of_softexpert_bpm{
+    margin-top: 40px;
+}
+
 }
 @media screen and (max-width: 1280px) {
     .content_grid_template #solution_description p{
@@ -195,12 +211,16 @@ body{
 }
 
 
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 70em) {
 
+body{
+    overflow: scroll;
+}
 
 .content_grid_template{
     display: grid;
     grid-template-columns: 1fr;
+    min-height: 1080px;
 }
 .content_grid_template #demo_softexpert_img img{
     display: block;
@@ -262,3 +282,37 @@ body{
 }
 }
 
+
+
+
+.btn-header1 {
+    display: block;
+    margin: auto;
+    background-color: #dd3333;
+    color: white;
+	padding: 0 15px;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: none;
+    box-shadow: none;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    margin-bottom: 60px;
+    transition: 0.25s;
+}
+.btn-header1:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #363636;
+    transition: 0.25s;
+}
+
+.span-btn-header{
+    margin-left: 5px;
+}
+.icone-solucao-solicite-apresentacao::before {
+    content: url(images/monitor-solucao.svg);
+    float: left;
+    width: 28px;
+    height: 26px;
+    margin-top: 6px;
+}
